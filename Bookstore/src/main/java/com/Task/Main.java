@@ -8,7 +8,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         try {
-            System.out.println("testAddBooks...");
+            System.out.println("testAddBooks");
             BookStore store = new BookStore();
             Book java = new PaperBook("001", "Java Basics", "Youssef", 50.0, Year.of(2010), 10);
             Book python = new EBook("002", "Python Basics", "Mohamed", 30.0, Year.of(2022), "PDF");
@@ -16,7 +16,7 @@ public class Main {
             store.addBook(java);
             store.addBook(python);
             store.addBook(cpp);
-            System.out.println("testAddBooks passed.");
+            System.out.println("testAddBooks passed");
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -36,7 +36,7 @@ public class Main {
             store.addBook(python);
             store.addBook(cpp);
             System.out.println("Amount baid : " + store.buyBook("001", 3, "y@gmail.com", "address"));
-            System.out.println("testBuy PaperBook passed.");
+            System.out.println("testBuy PaperBook passed");
         }
         catch (Exception e){
             e.printStackTrace();
@@ -56,7 +56,7 @@ public class Main {
             store.addBook(python);
             store.addBook(cpp);
             System.out.println("Amount baid : " + store.buyBook("002", 6, "y@gmail.com", "address"));
-            System.out.println("test Buy EBook passed.");
+            System.out.println("test Buy EBook passed");
         }
         catch (Exception e){
             e.printStackTrace();
@@ -102,7 +102,7 @@ public class Main {
             store.addBook(python);
             store.addBook(cpp);
             System.out.println("Amount baid : " + store.buyBook("003", 9, "y@gmail.com", "address"));
-            System.out.println("test Buy DemoBook passed.");
+            System.out.println("test Buy DemoBook passed");
         }
         catch (Exception e){
             e.printStackTrace();
@@ -123,7 +123,7 @@ public class Main {
             store.addBook(python);
             store.addBook(cpp);
             System.out.println("Amount baid : " + store.buyBook("001", 100, "y@gmail.com", "address"));
-            System.out.println("testBuy PaperBook passed.");
+            System.out.println("testBuy PaperBook passed");
         }
         catch (Exception e){
             e.printStackTrace();
