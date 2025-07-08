@@ -40,7 +40,6 @@ public class BookStore {
         Sellable sellableBook = (Sellable) book;
         sellableBook.reduceStock(quantity);
         double totalPrice = book.getPrice() * quantity;
-        sellableBook.reduceStock(quantity);
         book.deliver(email, address);
         return totalPrice;
     }
