@@ -10,9 +10,9 @@ public class Main {
         try {
             System.out.println("testAddBooks");
             BookStore store = new BookStore();
-            Book java = new PaperBook("001", "Java Basics", "Youssef", 50.0, Year.of(2010), 10);
-            Book python = new EBook("002", "Python Basics", "Mohamed", 30.0, Year.of(2022), "PDF");
-            Book cpp = new DemoBook("003", "C++ Baiscs", "Youssef", 80.0, Year.of(2023));
+            Book java = new PaperBook("001", "Java Basics", 50.0, Year.of(2010), 10);
+            Book python = new EBook("002", "Python Basics", 30.0, Year.of(2022), FileType.PDF);
+            Book cpp = new DemoBook("003", "C++ Baiscs", 80.0, Year.of(2023));
             store.addBook(java);
             store.addBook(python);
             store.addBook(cpp);
@@ -29,9 +29,9 @@ public class Main {
         try {
             System.out.println("test buy PaperBook");
             BookStore store = new BookStore();
-            Book java = new PaperBook("001", "Java Basics", "Youssef", 50.0, Year.of(2010), 10);
-            Book python = new EBook("002", "Python Basics", "Mohamed", 30.0, Year.of(2022), "PDF");
-            Book cpp = new DemoBook("003", "C++ Baiscs", "Youssef", 80.0, Year.of(2023));
+            Book java = new PaperBook("001", "Java Basics", 50.0, Year.of(2010), 10);
+            Book python = new EBook("002", "Python Basics", 30.0, Year.of(2022), FileType.PDF);
+            Book cpp = new DemoBook("003", "C++ Baiscs", 80.0, Year.of(2023));
             store.addBook(java);
             store.addBook(python);
             store.addBook(cpp);
@@ -49,9 +49,9 @@ public class Main {
         try {
             System.out.println("test buy EBook");
             BookStore store = new BookStore();
-            Book java = new PaperBook("001", "Java Basics", "Youssef", 50.0, Year.of(2010), 10);
-            Book python = new EBook("002", "Python Basics", "Mohamed", 30.0, Year.of(2022), "PDF");
-            Book cpp = new DemoBook("003", "C++ Baiscs", "Youssef", 80.0, Year.of(2023));
+            Book java = new PaperBook("001", "Java Basics", 50.0, Year.of(2010), 10);
+            Book python = new EBook("002", "Python Basics", 30.0, Year.of(2022), FileType.PDF);
+            Book cpp = new DemoBook("003", "C++ Baiscs", 80.0, Year.of(2023));
             store.addBook(java);
             store.addBook(python);
             store.addBook(cpp);
@@ -70,9 +70,9 @@ public class Main {
         try {
             System.out.println("test remove books");
             BookStore store = new BookStore();
-            Book java = new PaperBook("001", "Java Basics", "Youssef", 50.0, Year.of(2010), 10);
-            Book python = new EBook("002", "Python Basics", "Mohamed", 30.0, Year.of(2022), "PDF");
-            Book cpp = new DemoBook("003", "C++ Baiscs", "Youssef", 80.0, Year.of(2023));
+            Book java = new PaperBook("001", "Java Basics", 50.0, Year.of(2010), 10);
+            Book python = new EBook("002", "Python Basics", 30.0, Year.of(2022), FileType.PDF);
+            Book cpp = new DemoBook("003", "C++ Baiscs", 80.0, Year.of(2023));
             store.addBook(java);
             store.addBook(python);
             store.addBook(cpp);
@@ -95,9 +95,9 @@ public class Main {
         try {
             System.out.println("test buy DemoBook");
             BookStore store = new BookStore();
-            Book java = new PaperBook("001", "Java Basics", "Youssef", 50.0, Year.of(2010), 10);
-            Book python = new EBook("002", "Python Basics", "Mohamed", 30.0, Year.of(2022), "PDF");
-            Book cpp = new DemoBook("003", "C++ Baiscs", "Youssef", 80.0, Year.of(2023));
+            Book java = new PaperBook("001", "Java Basics", 50.0, Year.of(2010), 10);
+            Book python = new EBook("002", "Python Basics", 30.0, Year.of(2022), FileType.PDF);
+            Book cpp = new DemoBook("003", "C++ Baiscs", 80.0, Year.of(2023));
             store.addBook(java);
             store.addBook(python);
             store.addBook(cpp);
@@ -116,9 +116,9 @@ public class Main {
         try {
             System.out.println("test buy book more than in stock");
             BookStore store = new BookStore();
-            Book java = new PaperBook("001", "Java Basics", "Youssef", 50.0, Year.of(2010), 10);
-            Book python = new EBook("002", "Python Basics", "Mohamed", 30.0, Year.of(2022), "PDF");
-            Book cpp = new DemoBook("003", "C++ Baiscs", "Youssef", 80.0, Year.of(2023));
+            Book java = new PaperBook("001", "Java Basics", 50.0, Year.of(2010), 10);
+            Book python = new EBook("002", "Python Basics", 30.0, Year.of(2022), FileType.PDF);
+            Book cpp = new DemoBook("003", "C++ Baiscs", 80.0, Year.of(2023));
             store.addBook(java);
             store.addBook(python);
             store.addBook(cpp);

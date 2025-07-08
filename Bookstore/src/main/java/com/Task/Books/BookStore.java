@@ -34,10 +34,9 @@ public class BookStore {
         if (book == null) {
             throw new IllegalArgumentException(ISBN + " not found.");
         }
-        if (!(book instanceof Sellable)) {
+        if (!(book instanceof Sellable sellableBook)) {
             throw new IllegalArgumentException(ISBN + " is not for sale.");
         }
-        Sellable sellableBook = (Sellable) book;
         sellableBook.reduceStock(quantity);
         double totalPrice = book.getPrice() * quantity;
         book.deliver(email, address);

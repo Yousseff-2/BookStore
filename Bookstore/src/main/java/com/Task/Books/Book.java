@@ -5,13 +5,11 @@ import java.time.Year;
 public abstract class Book {
     private String ISBN;
     private String title;
-    private String author;
     private double price;
     private Year yearPublished;
-    public Book(String ISBN, String title, String author, double price, Year yearPublished) {
+    public Book(String ISBN, String title, double price, Year yearPublished) {
         this.ISBN = ISBN;
         this.title = title;
-        this.author = author;
         this.price = price;
         this.yearPublished = yearPublished;
     }
@@ -21,9 +19,6 @@ public abstract class Book {
     }
     public String getTitle() {
         return title;
-    }
-    public String getAuthor() {
-        return author;
     }
     public double getPrice() {
         return price;

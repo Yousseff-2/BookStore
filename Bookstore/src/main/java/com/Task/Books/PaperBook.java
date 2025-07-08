@@ -6,8 +6,8 @@ import java.time.Year;
 
 public class PaperBook extends Book implements Sellable {
     private int stock;
-    public PaperBook(String ISBN, String title, String author, double price, Year yearPublished, int stock) {
-        super(ISBN, title, author, price, yearPublished);
+    public PaperBook(String ISBN, String title, double price, Year yearPublished, int stock) {
+        super(ISBN, title, price, yearPublished);
         this.stock = stock;
     }
     public int getStock() {

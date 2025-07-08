@@ -5,12 +5,12 @@ import com.Task.Service.MailService;
 import java.time.Year;
 
 public class EBook extends Book implements Sellable {
-    private String filetype;
-    public EBook(String ISBN, String title, String author, double price, Year year, String filetype){
-        super(ISBN, title, author, price, year);
+    private FileType filetype;
+    public EBook(String ISBN, String title, double price, Year year, FileType filetype){
+        super(ISBN, title, price, year);
         this.filetype = filetype;
     }
-    public String getFiletype() {
+    public FileType getFiletype() {
         return filetype;
     }
     @Override
