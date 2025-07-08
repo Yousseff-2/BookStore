@@ -20,13 +20,24 @@ Welcome to **Quantum Book Store**, an online bookstore application that supports
 ##  Project Structure
 
 ```
-Bookstore/
-├── src/
-│   ├── model/           # Book classes (PaperBook, EBook, DemoBook)
-│   ├── service/         # Services like Email, Inventory
-│   └── Main.java        # Application entry point
-├── test/                # Unit tests
-└── README.md
+BookStore/
+├── .idea/ # IntelliJ project settings
+├── Assets/ # Screenshots used in README
+│ ├── 1.png
+│ ├── 2.png
+│ ├── 3.png
+│ ├── 4.png
+│ ├── 5.png
+│ ├── 6.png
+│ ├── 11.png
+│ └── 22.png
+├── Bookstore/ # Main source folder
+│ ├── model/ # Book classes (PaperBook, EBook, DemoBook)
+│ ├── service/ # EmailService, etc.
+│ └── Main.java # Application entry point
+├── out/ # Compiled output (by IntelliJ)
+├── README.md # Project documentation
+└── .gitignore # Git ignore rules
 ```
 
 ---
